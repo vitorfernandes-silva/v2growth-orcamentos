@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Sparkles, ArrowRight, Check } from "lucide-react";
+import { ShieldCheck, ArrowRight, Check } from "lucide-react";
 
 interface RecommendationProps {
   onSelectRecommended?: () => void;
@@ -26,11 +26,11 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
 
           <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
             <div className="inline-flex items-center gap-2 bg-primary text-white text-xs uppercase font-bold tracking-wider px-3.5 py-1.5 rounded-full">
-              <Sparkles className="w-3.5 h-3.5" />
-              Recomendação Oficial da V2
+              <ShieldCheck className="w-3.5 h-3.5" />
+              Recomendação Estratégica V2
             </div>
             <span className="text-xs text-slate-400 font-medium">
-              Equilíbrio perfeito para a Corte & Fernandes Advogados
+              Alinhamento técnico ideal para a Corte & Fernandes Advogados
             </span>
           </div>
 
@@ -42,29 +42,29 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
             <div className="md:col-span-7 space-y-4">
               <div className="flex items-baseline gap-3">
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">
-                  Plano Pro <span className="text-secondary">— 6 meses</span>
+                  Plano Pro <span className="text-secondary">(Ciclo semestral)</span>
                 </h3>
               </div>
 
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Por que recomendamos:{" "}
+                Justificativa estratégica:{" "}
                 <strong className="text-white">
-                  É a melhor relação custo-benefício para estruturar uma máquina previsível. Une o aumento de frequência no LinkedIn (12 conteúdos + vídeos), automações multicanal no HubSpot, Playbook de Vendas e o treinamento prático da equipe interna.
+                  Apresenta a estrutura indicada para consolidação de presença institucional e previsibilidade de reuniões. Integra aumento na frequência no LinkedIn com edição de vídeos, fluxos automatizados de nutrição no CRM, Playbook comercial e capacitação prática da equipe interna.
                 </strong>
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-slate-300 pt-2">
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  12 conteúdos/mês + Edição de vídeos curtos + Newsletter temática
+                  12 conteúdos mensais com edição de vídeos curtos e newsletter
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  Automações completas de follow-up (E-mail, LinkedIn e WhatsApp)
+                  Automações completas de follow-up multicanal (E-mail, LinkedIn e WhatsApp)
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                  Bônus: Treinamento prático do time interno de SDR / Comercial
+                  Bônus: Capacitação prática da equipe interna de atendimento e comercial
                 </li>
               </ul>
             </div>
@@ -85,8 +85,8 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
                   <strong className="text-white">R$ 5.940,00</strong>
                 </div>
                 <div className="flex justify-between text-xs text-slate-300">
-                  <span>Setup + Onboarding:</span>
-                  <strong className="text-emerald-400 uppercase font-bold">Grátis</strong>
+                  <span>Setup e Onboarding:</span>
+                  <strong className="text-emerald-400 uppercase font-bold">Incluso</strong>
                 </div>
               </div>
 
@@ -94,7 +94,7 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
                 onClick={handleSelect}
                 className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3.5 px-6 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-[0_0_20px_rgba(25,61,235,0.4)] cursor-pointer text-sm"
               >
-                <span>Quero esta proposta</span>
+                <span>Selecionar esta proposta</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

@@ -99,9 +99,9 @@ export default function Responsibilities() {
 
       <div className="max-w-4xl mx-auto bg-slate-950/70 border border-slate-800/90 rounded-2xl p-6 text-center">
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
-          💡 <strong className="text-white">Ponto de atenção fundamental:</strong> Como a prospecção ativa é
-          executada diariamente pela equipe do cliente, o compromisso com a rotina de envio dos scripts e atualização do
-          CRM é determinante para o volume final de reuniões geradas.
+          <strong className="text-white">Alinhamento de Execução:</strong> Como a prospecção ativa é
+          executada diariamente pela equipe do escritório, a constância no envio das abordagens e na atualização do
+          CRM é o fator determinante para o volume final de reuniões qualificadas.
         </p>
       </div>
     </section>

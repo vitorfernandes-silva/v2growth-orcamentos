@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import {
   Check,
-  Sparkles,
+  CheckCircle2,
   ArrowRight,
   MessageSquare,
-  Gift,
+  Percent,
   Scale,
 } from "lucide-react";
 import {
@@ -58,7 +58,7 @@ export default function ProposalCalculator({
   const planList = [PLANS.starter, PLANS.pro, PLANS.growth];
 
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6" id="simulador">
+    <section className="py-24 max-w-[1440px] mx-auto px-6 lg:px-12" id="simulador">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-xs uppercase tracking-wider text-secondary mb-2.5 block font-semibold">
           Simulador Interativo
@@ -139,8 +139,8 @@ export default function ProposalCalculator({
             </div>
             {planId === "pro" && (
               <p className="text-xs text-secondary/90 mt-3.5 flex items-center gap-1.5 font-medium">
-                <Sparkles className="w-3.5 h-3.5" />
-                Plano com melhor equilíbrio entre aceleração, automações no CRM e treinamento do time
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                Equilíbrio ideal entre frequência no LinkedIn, automações no CRM e capacitação do time.
               </p>
             )}
           </div>
@@ -254,7 +254,7 @@ export default function ProposalCalculator({
           <div className="bg-slate-900/30 border border-slate-800/80 rounded-3xl p-6 sm:p-7">
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-800/70">
               <div className="flex items-center gap-2.5">
-                <Gift className="w-5 h-5 text-secondary" />
+                <Percent className="w-5 h-5 text-secondary" />
                 <h3 className="text-lg font-bold text-white">Bônus por Indicação</h3>
               </div>
               <span className="text-[10px] uppercase font-bold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">
@@ -345,8 +345,8 @@ export default function ProposalCalculator({
 
               <div className="flex justify-between items-center text-slate-300 pt-3 border-t border-slate-800/60">
                 <div>
-                  <span className="font-medium block">Valor do projeto (TCV)</span>
-                  <span className="text-[11px] text-slate-400">Sem descontos</span>
+                  <span className="font-medium block">Valor do projeto</span>
+                  <span className="text-[11px] text-slate-400">Total sem descontos</span>
                 </div>
                 <span className="font-bold text-slate-200">{formatBRL(calc.baseTotal)}</span>
               </div>
@@ -356,14 +356,14 @@ export default function ProposalCalculator({
                 <div className="flex justify-between items-center text-emerald-400 bg-emerald-500/10 p-2.5 rounded-xl border border-emerald-500/20">
                   <div>
                     <span className="font-semibold block text-xs">
-                      Desconto forma de pagamento ({Math.round(calc.paymentOption.discountRate * 100)}%)
+                      Desconto condição de pagamento ({Math.round(calc.paymentOption.discountRate * 100)}%)
                     </span>
                     <span className="text-[10px] text-emerald-400/80">
                       {calc.paymentOption.name}
                     </span>
                   </div>
-                  <span className="font-bold text-sm">
-                    - {formatBRL(calc.paymentDiscountAmount)}
+                  <span className="font-bold text-xs sm:text-sm">
+                    Economia: {formatBRL(calc.paymentDiscountAmount)}
                   </span>
                 </div>
               )}
@@ -379,17 +379,17 @@ export default function ProposalCalculator({
                       {calc.referralOption.label}
                     </span>
                   </div>
-                  <span className="font-bold text-sm">
-                    - {formatBRL(calc.referralDiscountAmount)}
+                  <span className="font-bold text-xs sm:text-sm">
+                    Economia: {formatBRL(calc.referralDiscountAmount)}
                   </span>
                 </div>
               )}
 
               {/* Setup Row */}
               <div className="flex justify-between items-center text-slate-300 pt-2 border-t border-slate-800/60">
-                <span className="font-medium">Setup HubSpot & LinkedIn</span>
+                <span className="font-medium">Setup HubSpot e LinkedIn</span>
                 <span className="font-bold text-emerald-400 uppercase text-xs tracking-wider">
-                  Grátis
+                  Incluso
                 </span>
               </div>
             </div>
@@ -415,10 +415,10 @@ export default function ProposalCalculator({
                 {calc.paymentOption.id === "partial" && (
                   <>
                     <p className="text-slate-300">
-                      • Entrada (50%): <strong className="text-emerald-400">{formatBRL(calc.partialInitialPayment)}</strong>
+                      Entrada (50%): <strong className="text-emerald-400">{formatBRL(calc.partialInitialPayment)}</strong>
                     </p>
                     <p className="text-slate-300">
-                      • Restante (50%): <strong className="text-white">{formatBRL(calc.partialRemainingPayment)}</strong> parcelado conforme negociação contratual.
+                      Saldo restante (50%): <strong className="text-white">{formatBRL(calc.partialRemainingPayment)}</strong> parcelado conforme negociação contratual.
                     </p>
                   </>
                 )}
@@ -431,7 +431,7 @@ export default function ProposalCalculator({
 
                 {calc.totalSavings > 0 && (
                   <div className="mt-2 pt-2 border-t border-slate-800/60 flex items-center justify-between text-emerald-400 font-bold text-xs">
-                    <span>Você economiza:</span>
+                    <span>Economia total acumulada:</span>
                     <span>{formatBRL(calc.totalSavings)}</span>
                   </div>
                 )}
@@ -447,7 +447,7 @@ export default function ProposalCalculator({
                 className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2.5 transition-all duration-300 hover:shadow-[0_0_22px_rgba(25,61,235,0.45)] cursor-pointer text-sm"
               >
                 <MessageSquare className="w-4 h-4 text-secondary" />
-                <span>Quero avançar com a V2 Growth</span>
+                <span>Confirmar proposta selecionada</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -457,7 +457,7 @@ export default function ProposalCalculator({
                 rel="noopener noreferrer"
                 className="w-full text-center border border-slate-800 bg-slate-950/40 hover:bg-slate-900/60 text-slate-300 hover:text-white font-semibold py-3 px-5 rounded-full text-xs transition-colors block cursor-pointer"
               >
-                Falar com a V2 Growth sobre esta proposta
+                Solicitar esclarecimentos à V2 Growth
               </a>
 
               <p className="text-[10px] text-slate-400 text-center font-medium pt-1">

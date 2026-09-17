@@ -52,27 +52,27 @@ export const PLANS: Record<string, Plan> = {
     id: "starter",
     name: "Starter",
     monthly: 497,
-    tagline: "Fundação de Autoridade & Operação",
-    description: "Para organizar a casa, estruturar o LinkedIn institucional e implantar um processo comercial profissional.",
-    operationalNote: "A execução diária da prospecção ativa é realizada pela equipe interna do escritório.",
+    tagline: "Estruturação & Fundação Comercial",
+    description: "Estruturação do posicionamento no LinkedIn e organização do funil comercial no HubSpot CRM.",
+    operationalNote: "A execução diária dos contatos é realizada pela equipe interna do escritório com orientação tática da V2 Growth.",
     pillars: {
       linkedin: [
-        "Setup completo do perfil (otimização de SEO e conversão)",
-        "Definição de Linhas Editoriais estratégicas",
-        "8 conteúdos autorais por mês (2 publicações por semana)",
+        "Setup completo do perfil institucional com foco em autoridade e SEO",
+        "Definição de Linhas Editoriais estratégicas para o meio corporativo",
+        "8 artigos e publicações autorais por mês (2 por semana)",
       ],
       crm: [
-        "Setup inicial do HubSpot CRM (funil, etapas e campos personalizados)",
-        "Importação e higienização da base de contatos",
-        "Templates de e-mail profissionais para follow-up",
+        "Setup inicial do HubSpot CRM com funil, etapas e campos customizados",
+        "Higienização e importação da base de contatos do escritório",
+        "Modelos de e-mail profissionais para acompanhamento de oportunidades",
       ],
       prospecting: [
-        "Estruturação Comercial Simples (ICP, Personas e Scripts de Vendas)",
-        "Scripts de abordagem validados para LinkedIn e E-mail",
-        "Acompanhamento semanal do Funil de Vendas e orientação de follow-ups",
+        "Definição de Perfil de Cliente Ideal (ICP), personas e teses de abordagem",
+        "Elaboração de roteiros consultivos para LinkedIn e e-mail",
+        "Acompanhamento semanal do funil de vendas para orientar próximos passos",
       ],
       bonus: [
-        "Conformidade Ética OAB (Provimento 205/2021 do CFOAB em todas as peças)",
+        "Conformidade rigorosa com o Provimento 205/2021 do CFOAB em todas as peças",
       ],
     },
   },
@@ -80,31 +80,31 @@ export const PLANS: Record<string, Plan> = {
     id: "pro",
     name: "Pro",
     monthly: 990,
-    badge: "Mais Recomendado",
+    badge: "Recomendado",
     isRecommended: true,
-    tagline: "Aceleração de Autoridade & Conversão",
-    description: "Volume, automações e inteligência comercial para transformar autoridade jurídica em reuniões de negócios.",
-    operationalNote: "Acompanhamento próximo com automações multicanal e treinamento de time.",
+    tagline: "Aceleração & Automação de Pipeline",
+    description: "Ampliação de frequência, automações multicanal de acompanhamento e capacitação do time interno.",
+    operationalNote: "Acompanhamento tático próximo com cadências estruturadas e rotina comercial ativa.",
     pillars: {
       linkedin: [
-        "Tudo incluído no Starter",
-        "Aumento para 12 conteúdos autorais por mês (3 por semana)",
-        "Edição profissional de vídeos curtos",
-        "Newsletter mensal temática no LinkedIn",
+        "Escopo completo do plano Starter",
+        "12 artigos e publicações autorais por mês (3 por semana)",
+        "Edição profissional de vídeos curtos institucionais",
+        "Newsletter mensal temática no LinkedIn voltada a executivos",
       ],
       crm: [
-        "Automações completas de follow-up (E-mail, LinkedIn e WhatsApp)",
-        "Fluxos de reengajamento de contatos inativos da base",
-        "Gestão de tarefas e lembretes para os advogados",
+        "Automações de acompanhamento multicanal (e-mail, LinkedIn e WhatsApp)",
+        "Fluxos programados de reengajamento para contatos inativos da base",
+        "Painel de tarefas e lembretes para os advogados responsáveis",
       ],
       prospecting: [
-        "Estruturação Comercial Completa (Playbook de Vendas B2B)",
-        "Estratégia prática de Social Selling para os sócios",
-        "Acompanhamento tático semanal de cadências e taxas de resposta",
+        "Playbook comercial completo de vendas consultivas B2B",
+        "Metodologia prática de Social Selling para os sócios da banca",
+        "Acompanhamento tático semanal de conversão de contatos em reuniões",
       ],
       bonus: [
-        "Treinamento e Capacitação do Time Interno (SDR / Comercial) para uso do HubSpot e scripts",
-        "Conformidade Ética OAB (Provimento 205/2021 do CFOAB em todas as peças)",
+        "Capacitação prática da equipe interna para operação do CRM e cadências",
+        "Conformidade rigorosa com o Provimento 205/2021 do CFOAB em todas as peças",
       ],
     },
   },
@@ -112,35 +112,35 @@ export const PLANS: Record<string, Plan> = {
     id: "growth",
     name: "Growth",
     monthly: 1490,
-    badge: "Escala Máxima",
-    tagline: "Dominação de Mercado & Escala",
-    description: "Máxima presença com motor de autoridade via webinários mensais, lead scoring e mentoria estratégica.",
-    operationalNote: "Operação integrada de alta performance com governança de metas e eventos digitais.",
+    badge: "Operação Completa",
+    tagline: "Expansão & Governança Jurídica",
+    description: "Operação integrada com eventos ao vivo, qualificação preditiva de contas e mentoria estratégica de metas.",
+    operationalNote: "Gestão executiva de crescimento com governança periódica e eventos digitais de alta autoridade.",
     pillars: {
       linkedin: [
-        "Tudo incluído no Pro",
-        "Aumento para 16 conteúdos autorais por mês (4 por semana)",
-        "Cortes e reels estratégicos extraídos dos webinários",
+        "Escopo completo do plano Pro",
+        "16 publicações autorais por mês (4 por semana)",
+        "Cortes estratégicos dos eventos online para ampla distribuição",
       ],
       crm: [
-        "Lead Scoring preditivo para priorizar grandes contas B2B",
-        "Dashboards executivos de Forecast e Previsão de Honorários",
-        "Integração total de canais de captação (conforme plano assinado no HubSpot)",
+        "Qualificação preditiva (Lead Scoring) para priorizar contas corporativas",
+        "Painéis executivos de previsão de honorários e saúde do funil",
+        "Integração de canais de captação conforme licença ativa no HubSpot",
       ],
       prospecting: [
-        "Mentoria mensal estratégica com especialistas para alinhamento de metas",
-        "Análise fina e refinamento contínuo de abordagens de alta conversão",
+        "Mentoria mensal executiva para alinhamento de metas e novos mercados",
+        "Refinamento contínuo das abordagens comerciais de maior conversão",
       ],
       webinars: [
-        "Execução completa de 1 Webinário de Autoridade por mês",
-        "Planejamento temático, roteiro e estrutura técnica do evento",
-        "Fluxos automatizados de e-mail pré e pós-evento para agendamento de reuniões",
+        "Estruturação completa de 1 webinário temático de autoridade por mês",
+        "Roteirização técnica e planejamento temático do evento digital",
+        "Fluxos automatizados de convite e acompanhamento pós-evento",
       ],
       bonus: [
-        "Landing Page Institucional de Inscrição de alta conversão para os webinários",
-        "Definição de Filtros & List Building B2B (Mapeamento detalhado de tomadores de decisão)",
-        "Treinamento e Capacitação do Time Interno (SDR / Comercial)",
-        "Conformidade Ética OAB (Provimento 205/2021 do CFOAB em todas as peças)",
+        "Página institucional com alta taxa de conversão para inscrição em eventos",
+        "Mapeamento detalhado de tomadores de decisão corporativos (ICP) (nota: requer avaliação de licença do LinkedIn Sales Navigator pela banca)",
+        "Capacitação prática e contínua para a equipe interna do escritório",
+        "Conformidade rigorosa com o Provimento 205/2021 do CFOAB em todas as peças",
       ],
     },
   },
@@ -156,13 +156,13 @@ export const TERMS: TermOption[] = [
     months: 6,
     label: "6 meses",
     badge: "Recomendado",
-    description: "Equilíbrio ideal para maturidade de cadências e pipeline previsível",
+    description: "Tempo ideal para maturação de cadências e previsibilidade comercial",
   },
   {
     months: 8,
     label: "8 meses",
-    badge: "Maior Continuidade",
-    description: "Mais tempo para consolidação de autoridade e expansão de carteira",
+    badge: "Continuidade",
+    description: "Consolidação de posicionamento institucional e expansão de clientes",
   },
 ];
 
@@ -171,21 +171,21 @@ export const PAYMENT_OPTIONS: PaymentOption[] = [
     id: "monthly",
     name: "Mensal",
     discountRate: 0,
-    description: "Mensalidades fixas durante todo o período do contrato.",
+    description: "Faturamento mensal regular durante o período de contratação.",
   },
   {
     id: "partial",
     name: "50% Antecipado",
     discountRate: 0.1,
-    badge: "10% OFF",
-    description: "50% do valor total pago na assinatura do contrato e o restante parcelado.",
+    badge: "10% de desconto",
+    description: "Entrada de 50% na assinatura do contrato e saldo restante parcelado.",
   },
   {
     id: "upfront",
     name: "À Vista",
     discountRate: 0.15,
-    badge: "15% OFF",
-    description: "Pagamento integral à vista no início da parceria com desconto máximo.",
+    badge: "15% de desconto",
+    description: "Quitação integral no início da parceria com condição especial de desconto.",
   },
 ];
 
@@ -199,102 +199,101 @@ export const REFERRAL_OPTIONS: ReferralOption[] = [
   {
     id: "upTo1000",
     label: "Até R$ 1.000",
-    contractRange: "5% de desconto adicional",
+    contractRange: "5% adicional",
     discountRate: 0.05,
   },
   {
     id: "from1001to2000",
     label: "R$ 1.001 a R$ 2.000",
-    contractRange: "10% de desconto adicional",
+    contractRange: "10% adicional",
     discountRate: 0.1,
   },
   {
     id: "above2001",
     label: "R$ 2.001 ou mais",
-    contractRange: "20% de desconto adicional",
+    contractRange: "20% adicional",
     discountRate: 0.2,
   },
 ];
 
 export const COMPARISON_FEATURES = [
-  // LinkedIn Pillar
-  { category: "LinkedIn & Autoridade", name: "Setup e Otimização de Perfil (SEO / Conversão)", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "LinkedIn & Autoridade", name: "Linhas Editoriais Estratégicas", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "LinkedIn & Autoridade", name: "Volume de Conteúdos Autorais", starter: "8 / mês (2x/sem)", pro: "12 / mês (3x/sem)", growth: "16 / mês (4x/sem)" },
-  { category: "LinkedIn & Autoridade", name: "Edição de Vídeos Curtos", starter: "-", pro: "Sim", growth: "Sim" },
-  { category: "LinkedIn & Autoridade", name: "Newsletter Mensal no LinkedIn", starter: "-", pro: "Sim", growth: "Sim" },
-  { category: "LinkedIn & Autoridade", name: "Cortes Estratégicos dos Webinários", starter: "-", pro: "-", growth: "Sim" },
+  // LinkedIn
+  { category: "LinkedIn Institucional", name: "Otimização de Perfil (SEO e Conversão)", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "LinkedIn Institucional", name: "Linhas Editoriais Estratégicas", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "LinkedIn Institucional", name: "Frequência de Conteúdos Autorais", starter: "8 por mês", pro: "12 por mês", growth: "16 por mês" },
+  { category: "LinkedIn Institucional", name: "Edição Profissional de Vídeos Curtos", starter: "Não", pro: "Sim", growth: "Sim" },
+  { category: "LinkedIn Institucional", name: "Newsletter Mensal no LinkedIn", starter: "Não", pro: "Sim", growth: "Sim" },
+  { category: "LinkedIn Institucional", name: "Distribuição de Cortes dos Webinários", starter: "Não", pro: "Não", growth: "Sim" },
 
-  // HubSpot CRM Pillar
-  { category: "HubSpot CRM", name: "Setup Inicial (Funil, Etapas e Campos)", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "HubSpot CRM", name: "Importação e Higienização de Base", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "HubSpot CRM", name: "Templates de E-mail para Follow-up", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "HubSpot CRM", name: "Automações de Follow-up e Reengajamento", starter: "-", pro: "Sim", growth: "Sim" },
-  { category: "HubSpot CRM", name: "Lead Scoring Preditivo para Contas B2B", starter: "-", pro: "-", growth: "Sim" },
-  { category: "HubSpot CRM", name: "Dashboards de Previsão de Honorários (Forecast)", starter: "-", pro: "-", growth: "Sim" },
+  // HubSpot CRM
+  { category: "HubSpot CRM", name: "Setup Inicial do Pipeline e Campos", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "HubSpot CRM", name: "Higienização e Importação de Base", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "HubSpot CRM", name: "Modelos de E-mail de Acompanhamento", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "HubSpot CRM", name: "Automações Multicanal de Acompanhamento", starter: "Não", pro: "Sim", growth: "Sim" },
+  { category: "HubSpot CRM", name: "Qualificação Preditiva de Contas (Lead Scoring)", starter: "Não", pro: "Não", growth: "Sim" },
+  { category: "HubSpot CRM", name: "Painéis de Previsão de Honorários (Forecast)", starter: "Não", pro: "Não", growth: "Sim" },
 
   // Prospecção Ativa B2B
-  { category: "Prospecção Ativa B2B", name: "Estruturação de ICP, Personas e Scripts", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "Prospecção Ativa B2B", name: "Acompanhamento Semanal do Funil", starter: "Sim", pro: "Sim", growth: "Sim" },
-  { category: "Prospecção Ativa B2B", name: "Playbook Completo de Vendas B2B", starter: "-", pro: "Sim", growth: "Sim" },
-  { category: "Prospecção Ativa B2B", name: "Estratégia de Social Selling", starter: "-", pro: "Sim", growth: "Sim" },
-  { category: "Prospecção Ativa B2B", name: "Mentoria Mensal Estratégica de Metas", starter: "-", pro: "-", growth: "Sim" },
+  { category: "Prospecção Comercial B2B", name: "Mapeamento de ICP, Personas e Roteiros", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "Prospecção Comercial B2B", name: "Acompanhamento Semanal do Funil", starter: "Sim", pro: "Sim", growth: "Sim" },
+  { category: "Prospecção Comercial B2B", name: "Playbook Completo de Vendas B2B", starter: "Não", pro: "Sim", growth: "Sim" },
+  { category: "Prospecção Comercial B2B", name: "Metodologia de Social Selling", starter: "Não", pro: "Sim", growth: "Sim" },
+  { category: "Prospecção Comercial B2B", name: "Mentoria Mensal de Metas e Performance", starter: "Não", pro: "Não", growth: "Sim" },
 
-  // Webinários Mensais
-  { category: "Webinários & Eventos", name: "Webinário Mensal Completo (Roteiro e Gestão)", starter: "-", pro: "-", growth: "1 por mês" },
-  { category: "Webinários & Eventos", name: "Fluxos de E-mail Pré e Pós-Evento", starter: "-", pro: "-", growth: "Sim" },
+  // Webinários
+  { category: "Eventos Digitais", name: "Planejamento e Roteiro de Webinário Mensal", starter: "Não", pro: "Não", growth: "1 por mês" },
+  { category: "Eventos Digitais", name: "Fluxos de E-mail de Inscrição e Pós-Evento", starter: "Não", pro: "Não", growth: "Sim" },
 
-  // Bônus Especiais
-  { category: "Bônus Especiais", name: "Conformidade Ética OAB (Provimento 205/2021)", starter: "Incluso", pro: "Incluso", growth: "Incluso" },
-  { category: "Bônus Especiais", name: "Treinamento e Capacitação do Time Interno (SDR / Comercial)", starter: "-", pro: "Incluso", growth: "Incluso" },
-  { category: "Bônus Especiais", name: "Mapeamento de ICP & List Building B2B (*)", starter: "-", pro: "-", growth: "Incluso" },
-  { category: "Bônus Especiais", name: "Landing Page Institucional para os Webinários", starter: "-", pro: "-", growth: "Incluso" },
+  // Bônus
+  { category: "Bônus Inclusos", name: "Conformidade Ética OAB (Provimento 205/2021)", starter: "Incluso", pro: "Incluso", growth: "Incluso" },
+  { category: "Bônus Inclusos", name: "Capacitação Prática da Equipe Interna", starter: "Não", pro: "Incluso", growth: "Incluso" },
+  { category: "Bônus Inclusos", name: "Mapeamento de Decisores Corporativos (requer avaliação do LinkedIn Sales Navigator)", starter: "Não", pro: "Não", growth: "Incluso" },
+  { category: "Bônus Inclusos", name: "Página Institucional de Inscrição de Eventos", starter: "Não", pro: "Não", growth: "Incluso" },
 ];
 
 export const FAQ_ITEMS = [
   {
-    question: "Como funciona a conformidade com as regras éticas da OAB?",
+    question: "Como é assegurada a conformidade com as normas da OAB?",
     answer:
-      "Todas as nossas ações respeitam rigorosamente o Provimento 205/2021 do CFOAB e o Código de Ética e Disciplina da OAB. Não realizamos mercantilização, promessas de causas ganhas ou captação indevida. Focamos exclusivamente em autoridade técnica, conteúdo informativo e prospecção ativa qualificada no meio corporativo (B2B).",
+      "Todas as iniciativas seguem estritamente as diretrizes do Provimento 205/2021 do CFOAB e do Código de Ética e Disciplina da OAB. A estratégia apoia-se no caráter informativo, na sobriedade e na autoridade técnica, vedando expressamente qualquer forma de mercantilização ou promessa de resultados judiciais.",
   },
   {
-    question: "Quem executa a prospecção ativa no dia a dia?",
+    question: "Qual é a divisão operacional da prospecção diária?",
     answer:
-      "A execução diária de conexões, envio dos scripts e agendamento é realizada pelo time interno (SDR, estagiário ou advogados) do escritório Corte & Fernandes. A V2 Growth é responsável por toda a inteligência: construção do ICP, criação dos scripts de abordagem, automações no CRM, treinamento prático e mentoria semanal para garantir alta conversão.",
+      "A abordagem direta, o envio dos roteiros e os agendamentos são conduzidos pela equipe interna do escritório. A V2 Growth é responsável por toda a inteligência estratégica: definição do perfil de cliente ideal (ICP), elaboração dos roteiros consultivos, estruturação das automações no CRM e acompanhamento tático semanal para aprimorar os índices de conversão.",
   },
   {
-    question: "As licenças de ferramentas (HubSpot e LinkedIn Sales Navigator) estão inclusas?",
+    question: "As licenças de softwares terceiros estão inclusas na proposta?",
     answer:
-      "Não. O investimento desta proposta remunera a assessoria, inteligência e tecnologia da V2 Growth. As eventuais assinaturas de plataformas de terceiros — como a licença do HubSpot CRM ou do LinkedIn Sales Navigator — são contratadas diretamente pelo escritório caso optem por utilizar recursos pagos dessas ferramentas.",
+      "Não. Os valores apresentados remuneram a assessoria, planejamento e tecnologia da V2 Growth. Licenças de ferramentas de terceiros, a exemplo do HubSpot CRM ou do LinkedIn Sales Navigator, são contratadas diretamente pela banca junto aos respectivos provedores caso o escritório opte por planos pagos.",
   },
   {
-    question: "O setup e onboarding inicial são cobrados à parte?",
+    question: "Existe cobrança de taxa de implantação ou adesão?",
     answer:
-      "Não. O setup completo do perfil, organização do funil no HubSpot CRM e mapeamento do ICP estão 100% inclusos gratuitamente em todos os planos desde o primeiro dia.",
+      "Não. A configuração do funil no HubSpot CRM, o alinhamento de perfil no LinkedIn e a estruturação dos roteiros iniciais estão inclusos sem qualquer custo adicional em todos os planos.",
   },
   {
-    question: "Posso contratar por 4, 6 ou 8 meses?",
+    question: "Quais são os prazos contratuais disponíveis?",
     answer:
-      "Sim. Você escolhe o horizonte de contratação que melhor se alinha com o planejamento estratégico do escritório. O período de 6 meses é o mais recomendado para maturação completa do pipeline jurídico.",
+      "A proposta prevê opções de 4, 6 ou 8 meses de parceria. O período de 6 meses é recomendado pela V2 Growth por proporcionar o tempo necessário para maturação das cadências e geração de previsibilidade no pipeline.",
   },
   {
-    question: "Existe desconto para pagamento antecipado?",
+    question: "Como funcionam as condições de pagamento antecipado?",
     answer:
-      "Sim. Pagando 50% antecipadamente e o restante parcelado, o escritório recebe 10% de desconto sobre o valor total do contrato. Optando pelo pagamento integral à vista no início do projeto, o desconto é de 15%.",
+      "Para a modalidade com 50% de entrada antecipada e saldo restante parcelado, aplica-se 10% de desconto sobre o valor total do contrato. Para pagamento integral à vista no início da parceria, concede-se 15% de desconto sobre o valor total.",
   },
   {
-    question: "Como funciona o bônus de desconto por indicação?",
+    question: "Como é aplicado o bônus por indicação?",
     answer:
-      "Caso o escritório indique uma empresa ou parceiro para a V2 Growth e essa indicação resulte em um novo contrato fechado, a Corte & Fernandes recebe um desconto adicional de 5%, 10% ou 20% aplicado sequencialmente sobre o valor do projeto.",
+      "Caso o escritório indique uma empresa ou parceiro para a V2 Growth e essa indicação resulte em contrato efetivado, a Corte & Fernandes recebe um desconto adicional de 5%, 10% ou 20%, calculado sequencialmente sobre o saldo do projeto.",
   },
   {
-    question: "Como funcionam os Webinários Mensais previstos no plano Growth?",
+    question: "Como são estruturados os webinários no plano Growth?",
     answer:
-      "No plano Growth, estruturamos 1 webinário temático por mês focado em dores de empresas e executivos. Cuidamos do tema, roteiro, landing page de captação e cadência de e-mails para levar os inscritos a reuniões de diagnóstico com os sócios.",
+      "No plano Growth, a V2 Growth realiza o planejamento temático, roteirização, estruturação da página de inscrição e automações de comunicação pré e pós-evento para converter participantes em reuniões de diagnóstico com os sócios.",
   },
 ];
 
-// Calculation Helper
 export interface CalculationResult {
   plan: Plan;
   months: number;
@@ -364,29 +363,29 @@ export function buildWhatsAppProposalUrl(calc: CalculationResult): string {
     calc.paymentOption.id === "monthly"
       ? "Mensal"
       : calc.paymentOption.id === "partial"
-      ? "50% antecipado + restante parcelado"
+      ? "50% antecipado e saldo parcelado"
       : "À vista";
 
   const paymentDiscountPercent = `${Math.round(calc.paymentOption.discountRate * 100)}%`;
   const referralDiscountPercent = `${Math.round(calc.referralOption.discountRate * 100)}%`;
 
-  let message = `Olá, V2 Growth! Analisei a proposta comercial para o ${CLIENT_NAME} e gostaria de avançar.\n\n`;
+  let message = `Olá, equipe V2 Growth. Analisei a proposta comercial para a ${CLIENT_NAME} e gostaria de avançar.\n\n`;
   message += `Plano: ${calc.plan.name} (${calc.plan.tagline})\n`;
   message += `Período: ${calc.months} meses\n`;
-  message += `Pagamento: ${paymentDesc}\n`;
-  message += `Valor original: ${formatBRL(calc.baseTotal)}\n`;
+  message += `Forma de pagamento: ${paymentDesc}\n`;
+  message += `Valor base: ${formatBRL(calc.baseTotal)}\n`;
   message += `Desconto de pagamento: ${paymentDiscountPercent}\n`;
-  message += `Desconto por indicação: ${referralDiscountPercent}\n`;
-  message += `Valor final: ${formatBRL(calc.finalTotal)}\n`;
+  message += `Bônus por indicação: ${referralDiscountPercent}\n`;
+  message += `Valor final do projeto: ${formatBRL(calc.finalTotal)}\n`;
   if (calc.totalSavings > 0) {
     message += `Economia total: ${formatBRL(calc.totalSavings)}\n`;
   }
-  message += `\nGostaria de conversar sobre a formalização e os próximos passos do projeto.`;
+  message += `\nGostaria de alinhar os próximos passos operacionais.`;
 
   return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`;
 }
 
 export function buildWhatsAppContactUrl(subject = "Dúvida sobre proposta"): string {
-  const message = `Olá, V2 Growth! Gostaria de conversar com um especialista sobre a proposta de crescimento comercial da Corte & Fernandes Advogados Associados.`;
+  const message = `Olá, equipe V2 Growth. Gostaria de conversar com um especialista sobre a proposta de estruturação comercial da Corte & Fernandes Advogados Associados.`;
   return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`;
 }

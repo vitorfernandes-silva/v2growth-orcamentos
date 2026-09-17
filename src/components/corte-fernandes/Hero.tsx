@@ -26,21 +26,20 @@ export default function Hero() {
             height={20}
             className="h-4 w-auto object-contain"
           />
-          Corte & Fernandes Advogados × V2 Growth
+          Corte & Fernandes Advogados | V2 Growth
         </div>
       </div>
 
       {/* Main Headline */}
       <h1 className="max-w-4xl text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.18] mb-6">
-        Autoridade jurídica não precisa depender de indicações casuais. Ela pode ser um{" "}
-        <span className="text-gradient-primary">motor previsível de negócios</span>.
+        Estruturação comercial e autoridade no mercado corporativo para a{" "}
+        <span className="text-gradient-primary">Corte & Fernandes</span>.
       </h1>
 
       {/* Subheadline */}
       <p className="max-w-3xl text-base sm:text-lg lg:text-xl text-slate-300 font-normal mb-10 leading-relaxed">
-        A proposta da V2 Growth para a <strong>Corte & Fernandes Advogados Associados</strong> é estruturar
-        um processo simples, elegante e mensurável para gerar autoridade no LinkedIn, organizar o funil no
-        HubSpot CRM e acelerar a captação corporativa em total conformidade ética com a OAB.
+        Proposta técnica da V2 Growth para implantar um processo previsível de prospecção e posicionamento B2B,
+        integrando presença institucional no LinkedIn, governança de funil no HubSpot CRM e conformidade ética com a OAB.
       </p>
 
       {/* Action Buttons */}
@@ -49,7 +48,7 @@ export default function Hero() {
           href="#simulador"
           className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-sm sm:text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 group transition-all duration-300 hover:shadow-[0_0_24px_rgba(25,61,235,0.45)] cursor-pointer"
         >
-          <span>Escolher minha proposta</span>
+          <span>Visualizar planos e simulação</span>
           <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
         </a>
 
@@ -85,7 +84,7 @@ export default function Hero() {
           <div className="min-w-0">
             <span className="text-[11px] text-slate-400 block font-medium">Flexibilidade de Escopo</span>
             <span className="text-xs font-semibold text-white truncate block">
-              4, 6 ou 8 meses de parceria
+              4, 6 ou 8 meses de contrato
             </span>
           </div>
         </div>
@@ -95,9 +94,9 @@ export default function Hero() {
             <ShieldCheck className="w-4 h-4" />
           </div>
           <div className="min-w-0">
-            <span className="text-[11px] text-slate-400 block font-medium">Sem Custo de Entrada</span>
+            <span className="text-[11px] text-slate-400 block font-medium">Implantação Inclusa</span>
             <span className="text-xs font-semibold text-white truncate block">
-              Setup & Onboarding 100% Grátis
+              Setup e Onboarding inclusos
             </span>
           </div>
         </div>

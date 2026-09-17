@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Check, Minus, Gift } from "lucide-react";
+import { Check, Minus } from "lucide-react";
 import { COMPARISON_FEATURES } from "@/data/corteFernandesData";
 
 export default function PlanComparison() {
@@ -13,7 +13,7 @@ export default function PlanComparison() {
         </span>
       );
     }
-    if (val === "-") {
+    if (val === "Não" || val === "-") {
       return (
         <span className="inline-flex items-center justify-center text-slate-600">
           <Minus className="w-3.5 h-3.5" />
@@ -27,20 +27,19 @@ export default function PlanComparison() {
     );
   };
 
-  // Group features by category
   const categories = Array.from(new Set(COMPARISON_FEATURES.map((f) => f.category)));
 
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6">
+    <section className="py-24 max-w-[1440px] mx-auto px-6 lg:px-12">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-xs uppercase tracking-wider text-secondary mb-2.5 block font-semibold">
           Quadro Comparativo
         </span>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
-          Comparativo detalhado de <span className="text-gradient-primary">entregas e bônus</span>
+          Comparativo técnico de <span className="text-gradient-primary">entregas e bônus</span>
         </h2>
         <p className="text-slate-400 text-sm sm:text-base mt-4 leading-relaxed">
-          Entenda com clareza o escopo de cada plano para o posicionamento e estruturação comercial da banca.
+          Visão consolidada dos entregáveis e recursos contemplados no escopo operacional de cada plano.
         </p>
       </div>
 
@@ -51,7 +50,7 @@ export default function PlanComparison() {
             <thead>
               <tr className="border-b border-slate-800 bg-slate-950/70">
                 <th className="py-5 px-6 text-sm font-bold text-white w-2/5">
-                  Pilares de Atuação & Bônus
+                  Pilares de Atuação e Bônus
                 </th>
                 <th className="py-5 px-4 text-center text-xs sm:text-sm font-bold text-slate-300 w-1/5">
                   Starter
@@ -59,7 +58,7 @@ export default function PlanComparison() {
                 </th>
                 <th className="py-5 px-4 text-center text-xs sm:text-sm font-bold text-white bg-primary/10 w-1/5 border-x border-primary/20">
                   Pro
-                  <span className="block text-[11px] font-semibold text-secondary mt-0.5">★ Recomendado (R$ 990)</span>
+                  <span className="block text-[11px] font-semibold text-secondary mt-0.5">Recomendado (R$ 990)</span>
                 </th>
                 <th className="py-5 px-4 text-center text-xs sm:text-sm font-bold text-slate-300 w-1/5">
                   Growth
@@ -70,7 +69,7 @@ export default function PlanComparison() {
             <tbody className="divide-y divide-slate-800/50 text-xs sm:text-sm">
               {categories.map((cat) => {
                 const items = COMPARISON_FEATURES.filter((f) => f.category === cat);
-                const isBonus = cat === "Bônus Especiais";
+                const isBonus = cat === "Bônus Inclusos";
 
                 return (
                   <React.Fragment key={cat}>
@@ -79,10 +78,9 @@ export default function PlanComparison() {
                       <td
                         colSpan={4}
                         className={`py-3 px-6 text-xs font-bold uppercase tracking-wider ${
-                          isBonus ? "text-secondary flex items-center gap-1.5" : "text-slate-400"
+                          isBonus ? "text-secondary" : "text-slate-400"
                         }`}
                       >
-                        {isBonus && <Gift className="w-3.5 h-3.5" />}
                         {cat}
                       </td>
                     </tr>
@@ -114,7 +112,7 @@ export default function PlanComparison() {
 
         {/* Footnote */}
         <div className="p-4 bg-slate-950/60 border-t border-slate-800 text-[11px] text-slate-400 text-center">
-          (*) A assinatura do LinkedIn Sales Navigator e eventuais planos avançados do HubSpot CRM são licenças pagas contratadas separadamente pelo escritório junto aos fornecedores.
+          (*) A assinatura do LinkedIn Sales Navigator e eventuais planos avançados do HubSpot CRM são licenças contratadas separadamente pelo escritório junto aos fornecedores.
         </div>
       </div>
     </section>
