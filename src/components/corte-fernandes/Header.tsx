@@ -26,11 +26,11 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <span className="hidden md:inline-flex items-center gap-2 text-xs text-slate-300 font-medium px-3.5 py-1.5 rounded-full bg-slate-900/60 border border-slate-800">
             <Image
-              src="/corte-fernandes/cf_logo.png"
+              src="/corte-fernandes/cf_emblem.png"
               alt="Corte & Fernandes"
               width={24}
               height={24}
-              className="h-4 w-auto object-contain"
+              className="h-4.5 w-auto object-contain"
             />
             Corte & Fernandes Advogados
           </span>
