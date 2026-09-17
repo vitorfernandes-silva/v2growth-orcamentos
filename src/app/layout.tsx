@@ -14,8 +14,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Proposta Comercial — Edna Simeão | V2 Growth",
-  description: "Uma presença digital que trabalha por você enquanto você cuida dos seus pacientes. Desenvolvido pela V2 Growth.",
+  title: "V2 Growth | Propostas Comerciais",
+  description: "Canal oficial e confidencial de propostas comerciais da V2 Growth.",
 };
 
 export default function RootLayout({
