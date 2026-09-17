@@ -1,22 +1,22 @@
 "use client";
 
 import React from "react";
-import { Check, Minus } from "lucide-react";
+import { CheckCircleLinearIcon, MinusLinearIcon } from "@solar-icons/react";
 import { COMPARISON_FEATURES } from "@/data/corteFernandesData";
 
 export default function PlanComparison() {
   const renderCell = (val: string) => {
     if (val === "Sim" || val === "Incluso") {
       return (
-        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/10 text-emerald-400">
-          <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+        <span className="inline-flex items-center justify-center text-emerald-400">
+          <CheckCircleLinearIcon size={18} />
         </span>
       );
     }
     if (val === "Não" || val === "-") {
       return (
         <span className="inline-flex items-center justify-center text-slate-600">
-          <Minus className="w-3.5 h-3.5" />
+          <MinusLinearIcon size={16} />
         </span>
       );
     }

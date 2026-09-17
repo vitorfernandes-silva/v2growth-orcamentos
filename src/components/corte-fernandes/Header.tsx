@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowUpRight, Scale } from "lucide-react";
+import { AltArrowRightLinearIcon } from "@solar-icons/react";
 
 export default function Header() {
   return (
@@ -40,7 +40,7 @@ export default function Header() {
             className="bg-primary hover:bg-primary/90 text-white font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all duration-300 hover:shadow-[0_0_18px_rgba(25,61,235,0.4)] flex items-center gap-1.5 cursor-pointer"
           >
             <span>Escolher proposta</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <AltArrowRightLinearIcon size={16} />
           </a>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { AltArrowDownLinearIcon } from "@solar-icons/react";
 import { FAQ_ITEMS } from "@/data/corteFernandesData";
 
 export default function FAQ() {
@@ -47,7 +47,7 @@ export default function FAQ() {
                     isOpen ? "rotate-180 text-secondary bg-primary/20" : ""
                   }`}
                 >
-                  <ChevronDown className="w-4 h-4" />
+                  <AltArrowDownLinearIcon size={16} />
                 </div>
               </button>
 

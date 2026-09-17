@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Check, Shield, Scale } from "lucide-react";
+import { CheckCircleLinearIcon, ShieldCheckLinearIcon, ScaleLinearIcon } from "@solar-icons/react";
 
 export default function Responsibilities() {
   const v2Responsibilities = [
@@ -45,7 +45,7 @@ export default function Responsibilities() {
           <div>
             <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-secondary">
-                <Shield className="w-5 h-5" />
+                <ShieldCheckLinearIcon size={20} />
               </div>
               <div>
                 <span className="text-xs uppercase text-secondary font-bold tracking-wider block">
@@ -59,7 +59,7 @@ export default function Responsibilities() {
               {v2Responsibilities.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
                   <div className="w-4 h-4 rounded-full bg-primary/20 flex items-center justify-center text-secondary mt-0.5 shrink-0">
-                    <Check className="w-3 h-3 stroke-[2.5]" />
+                    <CheckCircleLinearIcon size={12} />
                   </div>
                   <span>{item}</span>
                 </li>
@@ -73,7 +73,7 @@ export default function Responsibilities() {
           <div>
             <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800">
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
-                <Scale className="w-5 h-5" />
+                <ScaleLinearIcon size={20} />
               </div>
               <div>
                 <span className="text-xs uppercase text-emerald-400 font-bold tracking-wider block">
@@ -87,7 +87,7 @@ export default function Responsibilities() {
               {corteFernandesResponsibilities.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
                   <div className="w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 mt-0.5 shrink-0">
-                    <Check className="w-3 h-3 stroke-[2.5]" />
+                    <CheckCircleLinearIcon size={12} />
                   </div>
                   <span>{item}</span>
                 </li>
@@ -95,14 +95,6 @@ export default function Responsibilities() {
             </ul>
           </div>
         </div>
-      </div>
-
-      <div className="max-w-4xl mx-auto bg-slate-950/70 border border-slate-800/90 rounded-2xl p-6 text-center">
-        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
-          <strong className="text-white">Alinhamento de Execução:</strong> Como a prospecção ativa é
-          executada diariamente pela equipe do escritório, a constância no envio das abordagens e na atualização do
-          CRM é o fator determinante para o volume final de reuniões qualificadas.
-        </p>
       </div>
     </section>
   );

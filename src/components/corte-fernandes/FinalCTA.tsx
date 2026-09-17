@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { MessageSquare, ArrowRight } from "lucide-react";
+import { ChatRoundDotsLinearIcon, ArrowRightLinearIcon } from "@solar-icons/react";
 import {
   CalculationResult,
   buildWhatsAppProposalUrl,
@@ -68,9 +67,9 @@ export default function FinalCTA({ calculation }: FinalCTAProps) {
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-full flex items-center justify-center gap-2.5 transition-all duration-300 hover:shadow-[0_0_25px_rgba(25,61,235,0.45)] cursor-pointer text-sm sm:text-base"
           >
-            <MessageSquare className="w-5 h-5 text-secondary fill-secondary" />
+            <ChatRoundDotsLinearIcon size={20} className="text-secondary" />
             <span>Confirmar proposta selecionada</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRightLinearIcon size={16} />
           </a>
 
           <a

@@ -1,7 +1,12 @@
 "use client";
 
 import React from "react";
-import { Award, Target, FolderKanban, TrendingUp } from "lucide-react";
+import {
+  MedalStarLinearIcon,
+  TargetLinearIcon,
+  FolderCheckLinearIcon,
+  GraphUpLinearIcon,
+} from "@solar-icons/react";
 
 export default function GrowthSystem() {
   const steps = [
@@ -10,7 +15,7 @@ export default function GrowthSystem() {
       title: "Posicionar",
       description:
         "Construir presença de autoridade no LinkedIn com artigos, vídeos e análises jurídicas que atraem decisores.",
-      icon: Award,
+      icon: MedalStarLinearIcon,
       highlight: "Autoridade Técnica",
     },
     {
@@ -18,7 +23,7 @@ export default function GrowthSystem() {
       title: "Prospectar",
       description:
         "Mapear diretores e empresas no ICP exato com cadências e scripts de abordagem consultiva e elegante.",
-      icon: Target,
+      icon: TargetLinearIcon,
       highlight: "Prospecção B2B Ativa",
     },
     {
@@ -26,7 +31,7 @@ export default function GrowthSystem() {
       title: "Organizar",
       description:
         "Centralizar todo o pipeline de negócios no HubSpot CRM, garantindo follow-ups ágeis e histórico seguro.",
-      icon: FolderKanban,
+      icon: FolderCheckLinearIcon,
       highlight: "HubSpot CRM & Funil",
     },
     {
@@ -34,7 +39,7 @@ export default function GrowthSystem() {
       title: "Escalar",
       description:
         "Acelerar a atração com webinários temáticos, mentoria estratégica e previsão de honorários recorrentes.",
-      icon: TrendingUp,
+      icon: GraphUpLinearIcon,
       highlight: "Previsibilidade de Honorários",
     },
   ];
@@ -70,7 +75,7 @@ export default function GrowthSystem() {
                       ETAPA {step.number}
                     </span>
                     <div className="w-10 h-10 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-secondary group-hover:bg-primary/20 transition-colors">
-                      <IconComponent className="w-5 h-5" />
+                      <IconComponent size={20} />
                     </div>
                   </div>
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Lock } from "lucide-react";
+import { LockKeyholeLinearIcon } from "@solar-icons/react";
 import { CLIENT_NAME } from "@/data/corteFernandesData";
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
 
         <div className="text-center md:text-right space-y-1">
           <p className="text-xs text-slate-400 flex items-center justify-center md:justify-end gap-1.5 font-medium">
-            <Lock className="w-3.5 h-3.5 text-primary" />
+            <LockKeyholeLinearIcon size={14} className="text-primary" />
             Proposta comercial preparada exclusivamente para a {CLIENT_NAME}.
           </p>
           <p className="text-[11px] text-slate-400 font-medium">

@@ -6,18 +6,14 @@ import Hero from "@/components/corte-fernandes/Hero";
 import GrowthSystem from "@/components/corte-fernandes/GrowthSystem";
 import RevenueArchitecture from "@/components/corte-fernandes/RevenueArchitecture";
 import PlansSection from "@/components/corte-fernandes/PlansSection";
-import PlanComparison from "@/components/corte-fernandes/PlanComparison";
 import ProposalCalculator from "@/components/corte-fernandes/ProposalCalculator";
 import SetupSection from "@/components/corte-fernandes/SetupSection";
 import MetricsSection from "@/components/corte-fernandes/MetricsSection";
 import PartnershipTimeline from "@/components/corte-fernandes/PartnershipTimeline";
 import Responsibilities from "@/components/corte-fernandes/Responsibilities";
-import Recommendation from "@/components/corte-fernandes/Recommendation";
-import FAQ from "@/components/corte-fernandes/FAQ";
 import PaymentMethods from "@/components/corte-fernandes/PaymentMethods";
-import FinalCTA from "@/components/corte-fernandes/FinalCTA";
+import FAQ from "@/components/corte-fernandes/FAQ";
 import Footer from "@/components/corte-fernandes/Footer";
-import { calculateProposal } from "@/data/corteFernandesData";
 
 export default function CorteFernandesProposalPage() {
   const [selectedPlanId, setSelectedPlanId] = useState<string>("pro");
@@ -25,13 +21,6 @@ export default function CorteFernandesProposalPage() {
   const handleSelectPlan = (planId: string) => {
     setSelectedPlanId(planId);
   };
-
-  const handleSelectRecommended = () => {
-    setSelectedPlanId("pro");
-  };
-
-  // Base snapshot calculation for the Final CTA card
-  const calculation = calculateProposal(selectedPlanId, 6, "monthly", "none");
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#030712] text-[#f3f4f6]">
@@ -53,46 +42,37 @@ export default function CorteFernandesProposalPage() {
       {/* 03. Revenue Architecture */}
       <RevenueArchitecture />
 
-      {/* 04. Plan Cards */}
+      {/* 04. Plan Cards & Comparison Section */}
       <PlansSection
         selectedPlanId={selectedPlanId}
         onSelectPlan={handleSelectPlan}
       />
 
-      {/* 05. Comparison Matrix */}
-      <PlanComparison />
-
-      {/* 06. Interactive Simulator */}
+      {/* 05. Interactive Simulator */}
       <ProposalCalculator
         selectedPlanId={selectedPlanId}
         onPlanChange={handleSelectPlan}
       />
 
-      {/* 07. Setup & Onboarding Free */}
+      {/* 06. Setup & Onboarding Free */}
       <SetupSection />
 
-      {/* 08. Metrics */}
+      {/* 07. Metrics */}
       <MetricsSection />
 
-      {/* 09. Partnership Timeline */}
+      {/* 08. Partnership Timeline */}
       <PartnershipTimeline />
 
-      {/* 10. Responsibilities */}
+      {/* 09. Responsibilities */}
       <Responsibilities />
 
-      {/* 11. Recommendation */}
-      <Recommendation onSelectRecommended={handleSelectRecommended} />
-
-      {/* 12. FAQ Accordion */}
-      <FAQ />
-
-      {/* 13. Payment Methods */}
+      {/* 10. Payment Methods */}
       <PaymentMethods />
 
-      {/* 14. Final CTA */}
-      <FinalCTA calculation={calculation} />
+      {/* 11. FAQ Accordion (Última seção antes do rodapé) */}
+      <FAQ />
 
-      {/* 15. Footer */}
+      {/* 12. Footer */}
       <Footer />
     </div>
   );

@@ -1,7 +1,17 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, Eye, BookOpen, Filter, CheckSquare, Handshake, ShieldCheck, RefreshCw, Layers } from "lucide-react";
+import {
+  EyeLinearIcon,
+  Book2LinearIcon,
+  FilterLinearIcon,
+  CheckSquareLinearIcon,
+  Dialog2LinearIcon,
+  ShieldCheckLinearIcon,
+  RestartLinearIcon,
+  LayersLinearIcon,
+  ArrowRightLinearIcon,
+} from "@solar-icons/react";
 
 export default function RevenueArchitecture() {
   const stages = [
@@ -13,17 +23,17 @@ export default function RevenueArchitecture() {
         {
           name: "Visibilidade Qualificada",
           detail: "Diretores, CFOs e tomadores de decisão descobrem o escritório por meio de publicações e análises técnicas no LinkedIn.",
-          icon: Eye,
+          icon: EyeLinearIcon,
         },
         {
           name: "Educação Corporativa",
           detail: "Os executivos compreendem teses, jurisprudências e oportunidades jurídicas preventivas aplicáveis ao seu setor de atuação.",
-          icon: BookOpen,
+          icon: Book2LinearIcon,
         },
         {
           name: "Mapeamento de Fit",
           detail: "Identificação proativa de empresas com demandas latentes e enquadramento no Perfil de Cliente Ideal (ICP).",
-          icon: Filter,
+          icon: FilterLinearIcon,
         },
       ],
     },
@@ -35,12 +45,12 @@ export default function RevenueArchitecture() {
         {
           name: "Interação Qualificada",
           detail: "O tomador de decisão responde à abordagem consultiva ou inscreve-se em eventos técnicos promovidos pelo escritório.",
-          icon: CheckSquare,
+          icon: CheckSquareLinearIcon,
         },
         {
           name: "Diagnóstico Preliminar",
           detail: "Condução de reunião executiva de diagnóstico diretamente com os sócios da banca para entendimento da demanda.",
-          icon: Handshake,
+          icon: Dialog2LinearIcon,
         },
       ],
     },
@@ -52,17 +62,17 @@ export default function RevenueArchitecture() {
         {
           name: "Formalização & Onboarding",
           detail: "Apresentação da proposta de honorários, assinatura contratual e integração aos canais de atendimento.",
-          icon: ShieldCheck,
+          icon: ShieldCheckLinearIcon,
         },
         {
           name: "Retenção Ativa",
           detail: "Gestão transparente do histórico e das tarefas no HubSpot CRM, mantendo comunicação fluida e tempestiva.",
-          icon: RefreshCw,
+          icon: RestartLinearIcon,
         },
         {
           name: "Expansão de Carteira",
           detail: "Identificação de novas frentes jurídicas e consultivas dentro da mesma estrutura corporativa atendida.",
-          icon: Layers,
+          icon: LayersLinearIcon,
         },
       ],
     },
@@ -113,7 +123,7 @@ export default function RevenueArchitecture() {
                     >
                       <div className="flex items-center gap-3 mb-2">
                         <div className="w-8 h-8 rounded-lg bg-slate-800/90 flex items-center justify-center text-secondary shrink-0">
-                          <Icon className="w-4 h-4" />
+                          <Icon size={18} />
                         </div>
                         <span className="text-sm font-bold text-white">
                           {step.name}
@@ -132,20 +142,12 @@ export default function RevenueArchitecture() {
               <span>Etapa integrada ao pipeline</span>
               {idx < 2 && (
                 <span className="hidden lg:inline-flex items-center gap-1 text-secondary font-medium">
-                  Próxima etapa <ArrowRight className="w-3.5 h-3.5" />
+                  Próxima etapa <ArrowRightLinearIcon size={16} />
                 </span>
               )}
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Institutional Quote Banner */}
-      <div className="max-w-4xl mx-auto rounded-2xl border border-slate-800/80 bg-slate-950/60 p-6 sm:p-8 text-center">
-        <p className="text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
-          A contratação de serviços jurídicos corporativos requer autoridade técnica e método.
-          O crescimento sustentável resulta da combinação entre posicionamento qualificado, acompanhamento consultivo e organização do funil.
-        </p>
       </div>
     </section>
   );

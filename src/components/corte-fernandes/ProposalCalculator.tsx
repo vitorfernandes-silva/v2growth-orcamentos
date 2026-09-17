@@ -2,13 +2,12 @@
 
 import React, { useState } from "react";
 import {
-  Check,
-  CheckCircle2,
-  ArrowRight,
-  MessageSquare,
-  Percent,
-  Scale,
-} from "lucide-react";
+  CheckCircleLinearIcon,
+  ArrowRightLinearIcon,
+  ChatRoundDotsLinearIcon,
+  SaleLinearIcon,
+  ScaleLinearIcon,
+} from "@solar-icons/react";
 import {
   PLANS,
   TERMS,
@@ -113,7 +112,7 @@ export default function ProposalCalculator({
                             isSelected ? "border-secondary bg-secondary text-slate-950" : "border-slate-700"
                           }`}
                         >
-                          {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
+                          {isSelected && <CheckCircleLinearIcon size={12} />}
                         </div>
                         <span className="font-bold text-white text-base">{p.name}</span>
                       </div>
@@ -139,7 +138,7 @@ export default function ProposalCalculator({
             </div>
             {planId === "pro" && (
               <p className="text-xs text-secondary/90 mt-3.5 flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-3.5 h-3.5" />
+                <CheckCircleLinearIcon size={14} />
                 Equilíbrio ideal entre frequência no LinkedIn, automações no CRM e capacitação do time.
               </p>
             )}
@@ -180,7 +179,7 @@ export default function ProposalCalculator({
                           isSelected ? "border-secondary bg-secondary text-slate-950" : "border-slate-700"
                         }`}
                       >
-                        {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
+                        {isSelected && <CheckCircleLinearIcon size={12} />}
                       </div>
                       <span className="font-bold text-white text-base">{t.label}</span>
                     </div>
@@ -221,7 +220,7 @@ export default function ProposalCalculator({
                           isSelected ? "border-secondary bg-secondary text-slate-950" : "border-slate-700"
                         }`}
                       >
-                        {isSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
+                        {isSelected && <CheckCircleLinearIcon size={14} />}
                       </div>
 
                       <div className="min-w-0 flex-1">
@@ -254,7 +253,7 @@ export default function ProposalCalculator({
           <div className="bg-slate-900/30 border border-slate-800/80 rounded-3xl p-6 sm:p-7">
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-800/70">
               <div className="flex items-center gap-2.5">
-                <Percent className="w-5 h-5 text-secondary" />
+                <SaleLinearIcon size={20} className="text-secondary" />
                 <h3 className="text-lg font-bold text-white">Bônus por Indicação</h3>
               </div>
               <span className="text-[10px] uppercase font-bold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">
@@ -291,7 +290,7 @@ export default function ProposalCalculator({
                             isSelected ? "border-secondary bg-secondary text-slate-950" : "border-slate-700"
                           }`}
                         >
-                          {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
+                          {isSelected && <CheckCircleLinearIcon size={12} />}
                         </div>
                         <span className="text-xs font-semibold">{ref.label}</span>
                       </div>
@@ -321,7 +320,7 @@ export default function ProposalCalculator({
                 <h4 className="text-2xl font-black text-white">Sua proposta</h4>
               </div>
               <span className="text-xs text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1 rounded-full font-medium flex items-center gap-1.5">
-                <Scale className="w-3 h-3 text-secondary" />
+                <ScaleLinearIcon size={12} className="text-secondary" />
                 Corte & Fernandes
               </span>
             </div>
@@ -446,9 +445,9 @@ export default function ProposalCalculator({
                 rel="noopener noreferrer"
                 className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2.5 transition-all duration-300 hover:shadow-[0_0_22px_rgba(25,61,235,0.45)] cursor-pointer text-sm"
               >
-                <MessageSquare className="w-4 h-4 text-secondary" />
+                <ChatRoundDotsLinearIcon size={16} className="text-secondary" />
                 <span>Confirmar proposta selecionada</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRightLinearIcon size={16} />
               </a>
 
               <a

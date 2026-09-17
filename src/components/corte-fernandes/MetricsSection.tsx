@@ -2,57 +2,57 @@
 
 import React from "react";
 import {
-  Users,
-  UserCheck,
-  MessageSquare,
-  CalendarCheck,
-  FolderKanban,
-  FileCheck2,
-  TrendingUp,
-  LineChart,
-} from "lucide-react";
+  UsersGroupRoundedLinearIcon,
+  UserCheckLinearIcon,
+  ChatRoundDotsLinearIcon,
+  CalendarLinearIcon,
+  FoldersLinearIcon,
+  DocumentTextLinearIcon,
+  Chart2LinearIcon,
+  GraphUpLinearIcon,
+} from "@solar-icons/react";
 
 export default function MetricsSection() {
   const metrics = [
     {
       name: "Alcance Qualificado",
       description: "Quantos diretores, CFOs e tomadores de decisão estão sendo impactados pelos artigos no LinkedIn.",
-      icon: Users,
+      icon: UsersGroupRoundedLinearIcon,
     },
     {
       name: "Aceite de Conexões",
       description: "Percentual de tomadores de decisão que aceitam conexão direta com o perfil dos sócios.",
-      icon: UserCheck,
+      icon: UserCheckLinearIcon,
     },
     {
       name: "Respostas Consultivas",
       description: "Volume de decisores que respondem aos scripts de abordagem e demonstram interesse em diálogo.",
-      icon: MessageSquare,
+      icon: ChatRoundDotsLinearIcon,
     },
     {
       name: "Reuniões Agendadas",
       description: "Quantidade de reuniões de diagnóstico jurídico agendadas para a equipe de sócios e advogados.",
-      icon: CalendarCheck,
+      icon: CalendarLinearIcon,
     },
     {
       name: "Pipeline no HubSpot",
       description: "Volume financeiro total de propostas de honorários ativas em negociação no funil do CRM.",
-      icon: FolderKanban,
+      icon: FoldersLinearIcon,
     },
     {
       name: "Conversão em Honorários",
       description: "Proporção de reuniões de diagnóstico que se convertem em contratos formais de assessoria jurídica.",
-      icon: FileCheck2,
+      icon: DocumentTextLinearIcon,
     },
     {
       name: "Forecast Comercial",
       description: "Previsibilidade matemática de receita e honorários futuros com base no avanço das etapas no CRM.",
-      icon: LineChart,
+      icon: Chart2LinearIcon,
     },
     {
       name: "Retorno do Investimento",
       description: "Valor do ciclo de vida (LTV) dos novos clientes corporativos frente ao custo da assessoria de Growth.",
-      icon: TrendingUp,
+      icon: GraphUpLinearIcon,
     },
   ];
 
@@ -80,7 +80,7 @@ export default function MetricsSection() {
               className="bg-slate-900/30 border border-slate-800/80 rounded-2xl p-5 sm:p-6 hover:border-slate-700 hover:bg-slate-900/50 transition-all duration-200"
             >
               <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-secondary mb-4">
-                <IconComponent className="w-5 h-5" />
+                <IconComponent size={20} />
               </div>
               <h3 className="text-base font-bold text-white mb-2">{metric.name}</h3>
               <p className="text-xs text-slate-400 leading-relaxed">{metric.description}</p>

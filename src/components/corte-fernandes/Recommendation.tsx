@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ShieldCheck, ArrowRight, Check } from "lucide-react";
+import { ShieldCheckLinearIcon, ArrowRightLinearIcon, CheckCircleLinearIcon } from "@solar-icons/react";
 
 interface RecommendationProps {
   onSelectRecommended?: () => void;
@@ -26,7 +26,7 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
 
           <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
             <div className="inline-flex items-center gap-2 bg-primary text-white text-xs uppercase font-bold tracking-wider px-3.5 py-1.5 rounded-full">
-              <ShieldCheck className="w-3.5 h-3.5" />
+              <ShieldCheckLinearIcon size={14} />
               Recomendação Estratégica V2
             </div>
             <span className="text-xs text-slate-400 font-medium">
@@ -55,15 +55,15 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
 
               <ul className="space-y-2 text-xs sm:text-sm text-slate-300 pt-2">
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <CheckCircleLinearIcon size={16} className="text-emerald-400 shrink-0" />
                   12 conteúdos mensais com edição de vídeos curtos e newsletter
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <CheckCircleLinearIcon size={16} className="text-emerald-400 shrink-0" />
                   Automações completas de follow-up multicanal (E-mail, LinkedIn e WhatsApp)
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <CheckCircleLinearIcon size={16} className="text-emerald-400 shrink-0" />
                   Bônus: Capacitação prática da equipe interna de atendimento e comercial
                 </li>
               </ul>
@@ -95,7 +95,7 @@ export default function Recommendation({ onSelectRecommended }: RecommendationPr
                 className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3.5 px-6 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-[0_0_20px_rgba(25,61,235,0.4)] cursor-pointer text-sm"
               >
                 <span>Selecionar esta proposta</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRightLinearIcon size={16} />
               </button>
             </div>
           </div>

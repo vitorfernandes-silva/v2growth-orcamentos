@@ -2,7 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowRight, MessageSquare, ShieldCheck, Clock } from "lucide-react";
+import {
+  ArrowRightLinearIcon,
+  ChatRoundDotsLinearIcon,
+  ShieldCheckLinearIcon,
+  ClockCircleLinearIcon,
+} from "@solar-icons/react";
 import { buildWhatsAppContactUrl } from "@/data/corteFernandesData";
 
 export default function Hero() {
@@ -49,7 +54,7 @@ export default function Hero() {
           className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold text-sm sm:text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 group transition-all duration-300 hover:shadow-[0_0_24px_rgba(25,61,235,0.45)] cursor-pointer"
         >
           <span>Visualizar planos e simulação</span>
-          <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          <ArrowRightLinearIcon size={18} className="transition-transform group-hover:translate-x-1" />
         </a>
 
         <a
@@ -58,7 +63,7 @@ export default function Hero() {
           rel="noopener noreferrer"
           className="w-full sm:w-auto border border-slate-800 bg-slate-950/50 hover:bg-slate-900/60 hover:border-slate-700 text-slate-200 font-semibold text-sm sm:text-base px-7 py-4 rounded-full flex items-center justify-center gap-2.5 transition-all duration-300 cursor-pointer"
         >
-          <MessageSquare className="w-4 h-4 text-secondary" />
+          <ChatRoundDotsLinearIcon size={18} className="text-secondary" />
           <span>Falar com a V2 Growth</span>
         </a>
       </div>
@@ -67,7 +72,7 @@ export default function Hero() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-3xl w-full text-left">
         <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-900/40 border border-slate-800/80">
           <div className="w-8 h-8 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center text-secondary shrink-0">
-            <ShieldCheck className="w-4 h-4" />
+            <ShieldCheckLinearIcon size={18} />
           </div>
           <div className="min-w-0">
             <span className="text-[11px] text-slate-400 block font-medium">Conformidade OAB</span>
@@ -79,7 +84,7 @@ export default function Hero() {
 
         <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-900/40 border border-slate-800/80">
           <div className="w-8 h-8 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center text-secondary shrink-0">
-            <Clock className="w-4 h-4" />
+            <ClockCircleLinearIcon size={18} />
           </div>
           <div className="min-w-0">
             <span className="text-[11px] text-slate-400 block font-medium">Flexibilidade de Escopo</span>
@@ -91,7 +96,7 @@ export default function Hero() {
 
         <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-900/40 border border-slate-800/80">
           <div className="w-8 h-8 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 shrink-0">
-            <ShieldCheck className="w-4 h-4" />
+            <ShieldCheckLinearIcon size={18} />
           </div>
           <div className="min-w-0">
             <span className="text-[11px] text-slate-400 block font-medium">Implantação Inclusa</span>

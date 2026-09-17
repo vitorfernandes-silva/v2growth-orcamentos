@@ -1,26 +1,26 @@
 "use client";
 
 import React from "react";
-import { QrCode, FileText, CreditCard } from "lucide-react";
+import { QrCodeLinearIcon, DocumentTextLinearIcon, CardLinearIcon } from "@solar-icons/react";
 
 export default function PaymentMethods() {
   const methods = [
     {
       name: "PIX",
       description: "Compensação instantânea para início ágil das etapas de kick-off e setup.",
-      icon: QrCode,
+      icon: QrCodeLinearIcon,
       tag: "Mais Rápido",
     },
     {
       name: "Boleto Bancário",
       description: "Emissão de boletos faturados para a pessoa jurídica do escritório.",
-      icon: FileText,
+      icon: DocumentTextLinearIcon,
       tag: "Faturamento PJ",
     },
     {
       name: "Cartão de Crédito",
       description: "Pagamento com cartão de crédito corporativo com praticidade.",
-      icon: CreditCard,
+      icon: CardLinearIcon,
       tag: "Crédito ou Débito",
     },
   ];
@@ -51,7 +51,7 @@ export default function PaymentMethods() {
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-secondary">
-                      <Icon className="w-5 h-5" />
+                      <Icon size={20} />
                     </div>
                     <span className="text-[10px] uppercase font-bold text-slate-400 bg-slate-800/80 px-2.5 py-1 rounded-md">
                       {method.tag}
